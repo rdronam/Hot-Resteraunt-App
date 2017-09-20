@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/rdronam/Hot-Resteraunt-App#readme",
   "dependencies": {
+    "mysql": "^2.14.1",
     "path": "^0.12.7"
   }
 }
