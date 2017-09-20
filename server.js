@@ -8,7 +8,7 @@ var PORT = 8080;
 
 app.get("/", function(req, res) {
   res.send("Welcome to the Page!");
-  var http = fs.readFileSync("./home.html")
+  var http = fs.readFileSync("./index.html")
 });
 
 app.get("/", function(req, res) {
