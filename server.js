@@ -1,5 +1,5 @@
 var express = require("express");
-
+var path = require("path");
 var fs = require("fs");
 
 var app = express();
@@ -7,19 +7,21 @@ var PORT = 8080;
 
 
 app.get("/", function(req, res) {
-  res.send("Welcome to the Page!");
-  var http = fs.readFileSync("./index.html")
+  // var http = fs.readFileSync("./index.html");
+  res.sendFile(path.join(__dirname,"index.html"));
 });
 
-app.get("/", function(req, res) {
-  res.send("Welcome to the Page!");
-  var http = fs.readFileSync("./tables.html")
+app.get("/reservation", function(req, res) {
+  // var http = fs.readFileSync("./index.html");
+  res.sendFile(path.join(__dirname,"reservation.html"));
 });
 
-app.get("/", function(req, res) {
-  res.send("Welcome to the Page!");
-  var http = fs.readFileSync("./reserve.html")
+app.get("/tables", function(req, res) {
+  // var http = fs.readFileSync("./index.html");
+  res.sendFile(path.join(__dirname,"tables.html"));
 });
+
+
 
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);

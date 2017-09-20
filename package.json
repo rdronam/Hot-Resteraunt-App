@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/rdronam/Hot-Resteraunt-App/issues"
   },
-  "homepage": "https://github.com/rdronam/Hot-Resteraunt-App#readme"
+  "homepage": "https://github.com/rdronam/Hot-Resteraunt-App#readme",
+  "dependencies": {
+    "path": "^0.12.7"
+  }
 }
